@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'muta.yutaro@gmail.com'
 
   spec.summary       = 'fastlane actions for `.xcresult`'
-  # spec.homepage      = "https://github.com/<GITHUB_USERNAME>/fastlane-plugin-xcresult_actions"
+  spec.homepage      = "https://github.com/yutailang0119/fastlane-plugin-xcresult_actions"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
