@@ -1,6 +1,7 @@
 # xcresult_actions plugin
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-xcresult_actions)
+[![Test](https://github.com/yutailang0119/fastlane-plugin-xcresult_actions/workflows/Test/badge.svg)](https://github.com/yutailang0119/fastlane-plugin-xcresult_actions/actions?query=branch%3Amaster+workflow%3ATest)
 
 ## Getting Started
 
@@ -14,13 +15,14 @@ fastlane add_plugin xcresult_actions
 
 fastlane actions for `.xcresult`
 
-**Note to author:** Add a more detailed description about this plugin here. If your plugin contains multiple actions, make sure to mention them here.
+- summarize_xcresult_report
+    - Summarize about test coverage rate from `.xcresult` file
 
 ## Example
 
-Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
+Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and:
 
-**Note to author:** Please set up a sample project to make it easy for users to explore what your plugin does. Provide everything that is necessary to try out the plugin in this project (including a sample Xcode/Android project if necessary)
+- `bundle exec fastlane test_summarize_xcresult_report`
 
 ## Run tests for this plugin
 
