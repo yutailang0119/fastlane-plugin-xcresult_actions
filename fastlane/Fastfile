@@ -1,3 +1,16 @@
-lane :test do
-  xcresult_actions
+lane :test_summarize_xcresult_report do
+  scan(
+    project: 'examples/app/app.xcodeproj',
+    scheme: 'app',
+    derived_data_path: 'examples/app/build',
+    output_directory: 'examples/app/fastlane/test_output'
+  )
+
+  file = Dir["#{ENV['PWD']}/examples/app/build/**/Logs/Test/*.xcresult"].last
+  UI.message(file)
+
+  result = summarize_xcresult_report(
+    file: file
+  )
+  UI.message(result)
 end
